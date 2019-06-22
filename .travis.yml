@@ -1,0 +1,11 @@
+language: java
+
+addons:
+	sonarcloud:
+		organization:"Lina Marcela Patiño Pineda"
+		token:
+			secure: NkgmHx7+OU01aDqda9Gl1LyIVdtqj6ltiSfouilhiCDdCqFQoA4SBIaek2uXN+nKKFp+wMGIcospAneHx1Dswre5BPqr03GSrGWMESLob9FOrxZ5A8d0i4fYG9raH6STxhJok25ecxn1drT3VL0pO9gHgrIERAKf/sKy8Abp+nb1K+TINWhdrdz0zAQuDjKXCR0xFhsDHmHZC1ho0u+oFt7wySikhimvAF1OZc0DjfPBj357tAQxng5F9leawiE4ySP9pSJIqiB2sNlD5k/ryAevxKkZoek+z6sVJuSsN/V8TYLhrXdzrE2AvSz10UrnLyBemEP10Yz108Gm1zXbINwFG/pb+4Ct1fH8E8FpERexxdsCUe0rHUITH3yhJd1OXmGPaic8iK+OTU5ix8hOWFFp9Bps0WLW00XOd9g74xoGt5oeyIK3lpcEcU/kCIXRVdResKO2lNDKKj8RjPKN32wXJOUpUZ2dGmGrvFxrGd1nmgVd4GzgqflSUCZleCpLBtwX7BVHkuH8/klfo0Yq5XJ7slsOmS9KsxCR4RfAWFhCRTDL/jvMsu9XFQDR3dLQ+E7uRo7nz4T3Ccuyl2Oc6l3JbhjG0Fnqw9FvVgRmFieNq4vDvtQOjcpyE431iKoABoG/17MEPxbp2aiaciv7KS787slCQXWqP5Xj+ZSPDSU=
+
+script: 
+	-mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install	
+sonar:sonar
