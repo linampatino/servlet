@@ -8,6 +8,7 @@
         <title>Welcome</title>
     </head>
     <body>
-         <c:out value="${message}"/>
+    	<h1>Prueba de Continuous Deliver</h1>
+         <c:out value="${message}"/> 
     </body>
 </html>
