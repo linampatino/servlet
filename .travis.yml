@@ -1,7 +1,6 @@
 ##Yaml template 
 ---
 language: java
-dist: trusty
 
 addons:
     sonarcloud:
