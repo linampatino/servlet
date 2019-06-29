@@ -4,7 +4,7 @@ language: java
 
 addons:
     sonarcloud:
-        organization: "Lina Marcela Patiño Pineda"
+        organization: "lmpatino"
         token:
             secure: RXnmALg32qpIeA3w55wDUPb/somrWldvUvGE3ScrcnJgvd9qeWiCtWjkPjryCdaP58ZqsYQbTDdmN5syTDkv3qOYrxM0ikFmVoQCY91NP2u0q8Kbfp1BmdMOboJvn8SJN2cKAOW0Sv7MaoRbBRB5ydHl5MilaulLotoEgpRiwCBTPrD2USQ+KcfKKm9GqD+PineyfHEukiTNTzw6BFdt4UlZdZnCkgSnTyIKHvJHJRR116PtxWDwgAgCpY/uWaYBWHA7EmZTIjpWUjk+fSYCR0YhZLdm3C5tTbf9Mfvj7WgopxNwlWBNDJLS2ZKjQ4vsso/pLV+2mJ5frdex9WZU+kF2QRH0bxvmtrnpfU/t4axV+f/+KCdJFNuB3PlqZatEca1hgoardUxwwadxnMDARJb5Sp9vrD6U9kRAnCCVH9jj2xag+GJuDM6PyLrSJijA6pzUmWGUfeGbjADnaR1hl0LhKkxjvHEc8bZNQaIDSjfF8yrgAqgw/iKu5E8Ak9N8ibiihiWtvhzPdHCSWhAxSy6JhKI4/J8at+cAIS2ySoWQKoKlOmM/+/tSPCgd7ggQ7YA4gxXrBDRzgQgoxhlFqTD5vsZJZkgU+tpYaLMCIPdInh3vceE1w8UPWHnmcx2DlLSRZz1NWUlg7rItBcSKfxOwZhwxUOrhpIozv3smdRI=
     script:
