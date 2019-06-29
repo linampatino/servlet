@@ -3,8 +3,8 @@
 language: java
 addons:
     sonarcloud:
-        organization: "linampatino-github"
+        organization: linampatino-github
         token:
-            secure: mLWMx4NH4yp21o1KM0hh17g+WHHhEsVwnoJ3sypdZQ6zfQGhBoMayOGB4cM3IbAK6NRunUMautJX1s+z3pm+rkwEuTdDQKx9BFimooVkG2HAcHnVKNz5+jJJot4BN5ZFZla8G7A3fSFUw7RUi3mpEzqx9MP3J1Ldb4ENi82mHGpg0LdCaXe1O41/ddUfWY4yGMAyyUn2Xd6Cq5YuQ59wcY8w+kPu2z+Dp3Ej5XRYw+7GKBiu3nJahRnAAMu61vlDIVfFvHVx+MmVY9xjKHzffZjgcKtYUwi3HXXu52TsCqQTuqCG01P6s3qbXA662tHUwxw8gm1+IdVhr3D7r6ou+GK/NQ3+v1rXiqb2cCYDRvc/8T/mNvgdv5kcWT15VYs7a8mtLRMMVF0kFb+NRX2qD1ymYxBNO7F4hSRfEH4MFOqDjxoUB0lkcjHZozsP+xwfUbM9yUzrWeeFkVU8OS4dX23S8k+JEz5Qlq/mWqEIMpFAIFWuk/ZkoBzIFefplzUWglbOuI/U6o42yF0V/9ar2yVEI2lO8po6KM3wllEhKxryvZzS0K49uFpZkPz5rvylKicpFxR6GrnKLW1akZJbYKjNajzixPmVY4VJeXsWbQN0K3D8G9NTsk7iC5p9wAi7PF9eEZBbdJowIDHRCtiYtraH7K6w3vY8VdTAvJcQkyk=
+            secure: CssZOcX+2IzDmjZBh3GvZHrRGaBm6vls3dt6br0xgOxptoBkmgSpVhpwFwWScJFADjmNb+HRrlpGDmV0bB4xV3PFQpL9njhlLXU/ckuCWzafQ5+W1V288998QcYobyqpV4H3G0fpLj3YqFdgEvcg+HvzWxWZgHHPgI57ELhjMEI2Ec3+aFRHjycljCUS8LJ1CRVrxmmfmvG8pKErH4t0g61rBM07GSsBDDjMMJZzSI9+I1kZGHibgAj/SpacR/+qbfV/fviw+TnO1RjNAH/ruQG2/9o+JYu5pZcTL1oupn8jNm4HGonKhDuYKvjCYojs5JX/e7kykuEz0l4WermoqXXs2Ms+TzUd6NBgF0yEBaCjmen2c9MGR3t6kiiYAYg4kWOaPb44kQwmgquFau1QIax6KuHd4ia41hZ0jbErkdKaUvsX6cUTSPywtonehCChQyx0P/LAkSO2+aqZvYKOEtORsm0zi0NKESOEhQcZ66Yh+4WSD2Qkbb5dxQZE4X56zzQYmF9wESqntFc/l/QNL4Ih7eOvD+E49DWLNuuMBR9PVV+Tv6FLNNRmYH77bPnz+AOD/WaB/IpgmovuTl2PSMg6nQ8ufvAHHfidzrSAaCt+V8F0KQeKDgntymo2nBQ3LdOtKFj7N4NkMKkxr/tKxI0JYQKGnP+GDcu4uQcETbI=
 script:
     - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
