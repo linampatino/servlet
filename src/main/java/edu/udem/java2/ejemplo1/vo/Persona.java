@@ -5,6 +5,18 @@ public class Persona {
 	private String apellido;
 	private String usuario;
 	private String password;
+	
+	public Persona() {
+		super();
+	}
+	
+	public Persona(String nombre, String apellido, String usuario, String password) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.usuario = usuario;
+		this.password = password;
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
