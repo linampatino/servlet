@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 
-@WebFilter("/SecurityFilter")
+//@WebFilter("/SecurityFilter")
 public class SecurityFilter implements Filter {
 
   

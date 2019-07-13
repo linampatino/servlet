@@ -16,7 +16,7 @@ import edu.udem.java2.ejemplo1.vo.Persona;
 /**
  * Servlet implementation class FirstServlet
  */
-@WebServlet("/FirstServlet")
+//@WebServlet("/FirstServlet")
 public class FirstServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

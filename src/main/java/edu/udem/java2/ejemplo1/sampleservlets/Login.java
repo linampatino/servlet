@@ -15,7 +15,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 
 
-@WebServlet("/Login")
+//@WebServlet("/Login")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -31,8 +31,8 @@ public class Login extends HttpServlet {
 		super.init();
 		
 		usersMap = new HashMap<>();
-		usersMap.put("tstark", new Persona("Tony", "Stark", "tstark", "1234"));
-		usersMap.put("srogers", new Persona("Steven", "Rogers", "srogers", "1234"));
+		usersMap.put("tstark", new Persona("Tony", "Stark", "tstark", "1234", "tony@correo.com"));
+		usersMap.put("srogers", new Persona("Steven", "Rogers", "srogers", "1234", "steven@correo.com"));
 	}
 	
 	@Override
@@ -40,6 +40,9 @@ public class Login extends HttpServlet {
 		
 		String usuario = request.getParameter("login");
 		String password = request.getParameter("pwd");
+		
+		
+		
 		
 		if(usersMap.get(usuario) != null && usersMap.get(usuario).getPassword().equals(password)) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/welcome.jsp");
