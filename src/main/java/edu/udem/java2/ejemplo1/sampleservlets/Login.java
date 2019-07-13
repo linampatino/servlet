@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import database.JDBCUtil;
 import edu.udem.java2.ejemplo1.vo.Persona;
 
 import java.util.HashMap;
@@ -41,14 +42,15 @@ public class Login extends HttpServlet {
 		String usuario = request.getParameter("login");
 		String password = request.getParameter("pwd");
 		
+		Persona persona = null;
 		
-		
-		
-		if(usersMap.get(usuario) != null && usersMap.get(usuario).getPassword().equals(password)) {
+		if((usuario != null && usuario.length() > 0) && (password != null && password.length() > 0)) {
+			persona = JDBCUtil.obtenerPersona(usuario, password);
+		}
+				
+		if(persona != null) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/welcome.jsp");
-			
-			request.setAttribute("message", "Bienvenido "+  usersMap.get(usuario).getNombre() + " " + usersMap.get(usuario).getApellido());
-
+			request.setAttribute("message", "Bienvenido "+  persona.getNombre() + " " + persona.getApellido());
 			dispatcher.forward(request, response);
 		}else{
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
